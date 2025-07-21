@@ -110,7 +110,7 @@ parallel_localization: false
 #     bir temanın adıyla eşleşmelidir (örn: mocha, latte).
 # EN: Determines the active color palette for the site. The value must match
 #     the name of a theme in the _data/themes.yml file (e.g., mocha, latte).
-active_theme: "latte" # Burayı "latte" olarak değiştirerek açık temaya geçebilirsiniz. "mocha" ile koyu tamaya dönebilirsiniz
+active_theme: "mocha" # Burayı "latte" olarak değiştirerek açık temaya geçebilirsiniz. "mocha" ile koyu tamaya dönebilirsiniz
 
 # TR: Tema değiştirici menüsünde gösterilecek temaların listesi.
 #     Her temanın anahtarı (_data/themes.yml dosyasındaki ad) ve görünen adı olmalıdır.
