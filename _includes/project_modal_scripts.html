@@ -1,0 +1,73 @@
+{%- capture project_data_json -%}
+{
+    {%- for lang in site.languages -%}
+    "{{ lang }}": {
+        "projects": [
+            {%- assign base_project_path = '_projects/' | append: lang | append: '/' -%}
+            {%- assign projects_for_lang = site.projects | where_exp: "item", "item.path contains base_project_path" | sort: "order" -%}
+            {%- for p in projects_for_lang -%}
+            {
+                "id": "{{ p.id | slugify }}",
+                "title": {{ p.title | jsonify }},
+                "content": {{ p.content | strip_newlines | jsonify }},
+                "tags": {{ p.tags | jsonify | default: "[]" }},
+                "github": {{ p.github_url | jsonify }},
+                "live": {{ p.live_url | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+            {%- endfor -%}
+        ]
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+}
+{%- endcapture -%}
+
+<script>
+    // This script now only defines the data and the functions.
+    // It does NOT execute anything or add event listeners.
+    const allProjectsData = {{ project_data_json }};
+    const modalContentEl = document.getElementById('modalContent');
+    const modalTagsEl = document.getElementById('modalTags');
+    const modalGithubEl = document.getElementById('modalGithub');
+    const modalLiveEl = document.getElementById('modalLive');
+    const projectModal = document.getElementById('projectModal');
+    const modalTitleEl = document.getElementById('modalTitle');
+
+    function openProjectModal(projectId, lang, tagBgClass, tagTextClass) {
+        if (!allProjectsData || !allProjectsData[lang]) return;
+        const project = allProjectsData[lang].projects.find(p => p.id === projectId);
+        if (project) {
+            modalTitleEl.textContent = project.title || "Untitled";
+            modalContentEl.innerHTML = project.content || "<p>No content available.</p>";
+            modalTagsEl.innerHTML = '';
+            if (project.tags && project.tags.length > 0) {
+                project.tags.forEach(tag => {
+                    const tagElement = document.createElement('span');
+                    tagElement.className = `px-3 py-1 ${tagBgClass} ${tagTextClass} rounded-full text-xs`;
+                    tagElement.textContent = tag;
+                    modalTagsEl.appendChild(tagElement);
+                });
+            }
+            modalGithubEl.href = project.github || '#';
+            modalLiveEl.href = project.live || '#';
+            modalGithubEl.style.display = project.github ? 'inline-flex' : 'none';
+            modalLiveEl.style.display = project.live ? 'inline-flex' : 'none';
+            projectModal.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeProjectModal() {
+        if (!projectModal) return;
+        projectModal.classList.add('opacity-0');
+        setTimeout(() => {
+            projectModal.classList.add('pointer-events-none');
+            document.body.style.overflow = 'auto';
+        }, 300);
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && projectModal && !projectModal.classList.contains('opacity-0')) {
+            closeProjectModal();
+        }
+    });
+</script>

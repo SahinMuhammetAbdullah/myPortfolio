@@ -1,0 +1,94 @@
+tr:
+  nav_home: "Ana Sayfa"
+  nav_about: "Hakkımda"
+  nav_projects: "Projeler"
+  nav_contact: "İletişim"
+
+  lang_tr_short: "TR"
+  lang_en_short: "EN"
+  lang_switch_label: "Dili değiştir"
+
+  hero_scroll_aria_label: "Daha fazla bilgi için aşağı kaydırın"
+
+  section_title_about: "Hakkımda"
+  section_title_projects: "Projelerim"
+  section_title_contact: "Benimle İletişime Geçin"
+
+  contact_form_name_placeholder: "Adınız"
+  contact_form_email_placeholder: "E-posta Adresiniz"
+  contact_form_subject_placeholder: "Konu"
+  contact_form_message_placeholder: "Mesajınız"
+  contact_form_submit_button: "Mesaj Gönder"
+
+  footer_social_aria_label_prefix: "Sosyal medya profilim: "
+
+
+  project_modal_close_button_text: "Kapat" 
+  project_modal_close_button_aria_label: "Proje detayları penceresini kapat"
+  project_modal_github_link_text: "GitHub"
+  project_modal_live_demo_link_text: "Canlı Demo"
+  project_modal_tags_title: "Kullanılan Teknolojiler:" 
+
+  read_more: "Devamını Oku"
+  go_back: "Geri Dön"
+  loading_text: "Yükleniyor..."
+  error_text: "Bir hata oluştu."
+
+  external_link_aria_label: "(yeni sekmede açılır)"
+
+  no_projects_found_prefix: "Bu dilde ("
+  no_projects_found_suffix: ") gösterilecek proje bulunamadı."
+  
+  footer_built_with: "Teknolojiler"
+  footer_and: "ve"            
+  footer_design_by: "Tasarım"   
+  footer_licensed_under: "Lisanslıdır"
+  footer_view_source: "Kaynağı Görüntüle"
+
+
+
+en:
+  nav_home: "Home"
+  nav_about: "About"
+  nav_projects: "Projects"
+  nav_contact: "Contact"
+
+  lang_tr_short: "TR"
+  lang_en_short: "EN"
+  lang_switch_label: "Change language"
+
+  hero_scroll_aria_label: "Scroll down for more information"
+
+  section_title_about: "About Me"
+  section_title_projects: "My Projects"
+  section_title_contact: "Get In Touch"
+
+  contact_form_name_placeholder: "Your Name"
+  contact_form_email_placeholder: "Your Email Address"
+  contact_form_subject_placeholder: "Subject"
+  contact_form_message_placeholder: "Your Message"
+  contact_form_submit_button: "Send Message"
+
+  footer_social_aria_label_prefix: "My social media profile: "
+
+  project_modal_close_button_text: "Close"
+  project_modal_close_button_aria_label: "Close project details window" 
+  project_modal_github_link_text: "GitHub"
+  project_modal_live_demo_link_text: "Live Demo"
+  project_modal_tags_title: "Technologies Used:"
+
+  read_more: "Read More"
+  go_back: "Go Back"
+  loading_text: "Loading..."
+  error_text: "An error occurred."
+
+  external_link_aria_label: "(opens in a new tab)"
+
+  no_projects_found_prefix: "No projects found for this language ("
+  no_projects_found_suffix: ")."
+
+  footer_built_with: "Built with"
+  footer_and: "and"
+  footer_design_by: "Design by"
+  footer_licensed_under: "Licensed under"
+  footer_view_source: "View Source"

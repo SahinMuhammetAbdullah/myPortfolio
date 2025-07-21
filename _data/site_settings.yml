@@ -1,0 +1,109 @@
+# =============================================================================
+# ANA AYARLAR DOSYASI
+# TR: Sitenizin tüm kişisel bilgilerini bu tek dosyadan yönetebilirsiniz.
+# EN: You can manage all your site's personal information from this single file.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Profil Bilgileri
+# TR: Sitenin sahibi hakkında genel bilgiler. Avatar, isim, e-posta vb.
+# EN: General information about the site owner. Avatar, name, email, etc.
+# -----------------------------------------------------------------------------
+profile:
+  name: "Muhammet Abdullah Şahin"
+  short_name: "M.A. Şahin"
+  email: "m.sahinabdullah@gmail.com"
+  phone: # "+90 999 999 9999" # İsteğe bağlı
+  avatar: "/assets/images/profile.png"
+
+# -----------------------------------------------------------------------------
+# Sosyal Medya Linkleri
+# TR: Sitenizde görünecek sosyal medya ikonları ve linkleri.
+# EN: Social media icons and links to be displayed on your site.
+# -----------------------------------------------------------------------------
+social_links:
+  - name: "GitHub"
+    url: "https://github.com/SahinMuhammetAbdullah"
+    bg_color: "ctp-blue"
+    hover_bg_color: "ctp-sapphire"
+    icon_class: "fab fa-github"
+  - name: "LinkedIn"
+    url: "https://linkedin.com/in/muhammet-abdullah-sahin"
+    bg_color: "ctp-mauve"
+    hover_bg_color: "ctp-pink"
+    icon_class: "fab fa-linkedin"
+  - name: "Resume"
+    url: "https://cv.masahin.dev"
+    bg_color: "ctp-green"
+    hover_bg_color: "ctp-teal"
+    icon_class: "fas fa-file-lines"
+  - name: "Blog"
+    url: "https://blog.masahin.dev"
+    bg_color: "ctp-red"
+    hover_bg_color: "ctp-maroon"
+    icon_class: "fas fa-blog"
+  # - name: "Website"
+  #   url: "https://sahinmuhammetabdullah.github.io/"
+  #   icon_class: "fas fa-globe"
+
+# -----------------------------------------------------------------------------
+# Çok Dilli İçerikler
+# TR: Bu bölüm, farklı dillerde gösterilecek metinleri içerir.
+# EN: This section contains texts to be displayed in different languages.
+# -----------------------------------------------------------------------------
+multilingual_content:
+  tr:
+    profile:
+      greeting_intro: "Merhaba, ben"
+      tagline: "Full Stack Geliştirici & Yapay Zeka Geliştiricisi"
+      about_title: "Ben Kimim?"
+      about_bio_1: "Geliştirdiğim projelerde hem web teknolojileri hem de yapay zeka algoritmalarını bir araya getirerek uçtan uca çözümler sunan bir Full Stack Geliştiriciyim. Güvenlik, optimizasyon ve kullanıcı deneyimi benim için önceliklidir."
+      about_bio_2: "SOC analizlerinden URL malware tespit sistemlerine, ERP yazılımlarından tarayıcı eklentilerine kadar çeşitli alanlarda üretken projeler geliştirdim. Temiz kod, sürdürülebilirlik ve özgür yazılım felsefesine bağlı kalırım."
+      skills:
+        frontend:
+          title: "Ön Yüz (Frontend)"
+          items: "HTML5, CSS3, JavaScript (ES6+), React, Next.js, Tailwind CSS, Jekyll, Liquid"
+        backend:
+          title: "Arka Yüz (Backend)"
+          items: "Node.js, Go, Rust, Python, Java, Ruby, C"
+        database:
+          title: "Veritabanı & Diğer"
+          items: "MySQL, MsSQL, PostgreSQL, Docker, Git, Figma, Wireshark, Linux"
+      contact_intro: "Bir proje hakkında konuşmak, bir soru sormak veya sadece merhaba demek isterseniz, bana ulaşmaktan çekinmeyin. Açık kaynak dünyası, yapay zeka, siber güvenlik ve yazılım geliştirme konularında yeni fikirleri tartışmaya her zaman hazırım."
+      footer_tagline: "Full Stack Geliştirici & Yapay Zeka Uzmanı"
+      footer_copyright: "© {{ current_year }} {{ site_profile_name }}. Bazı hakları saklıdır."
+    navigation_links:
+      - title: "Hakkımda"
+        url: "#about"
+      - title: "Projeler"
+        url: "#projects"
+      - title: "İletişim"
+        url: "#contact"
+
+  en:
+    profile:
+      greeting_intro: "Hi, I'm"
+      tagline: "Full Stack Developer & AI Engineer"
+      about_title: "Who I Am?"
+      about_bio_1: "I am a Full Stack Developer combining modern web technologies with artificial intelligence to deliver end-to-end solutions. My work is focused on performance, security, and usability."
+      about_bio_2: "From SOC analysis to malware detection systems, ERP software to browser extensions — I build impactful and scalable solutions with a strong commitment to clean code and open-source principles."
+      skills:
+        frontend:
+          title: "Frontend"
+          items: "HTML5, CSS3, JavaScript (ES6+), React, Next.js, Tailwind CSS, Jekyll, Liquid"
+        backend:
+          title: "Backend"
+          items: "Node.js, Go, Rust, Python, Java, Ruby, C"
+        database:
+          title: "Database & Others"
+          items: "MySQL, MsSQL, PostgreSQL, Docker, Git, Figma, Wireshark, Linux"
+      contact_intro: "Feel free to reach out if you want to talk about a project, ask a question, or just say hi. I'm always open to discussing ideas in open-source, artificial intelligence, cybersecurity, and software architecture."
+      footer_tagline: "Full Stack Developer & AI Engineer"
+      footer_copyright: "© {{ current_year }} {{ site_profile_name }}. Some rights reserved."
+    navigation_links:
+      - title: "About"
+        url: "#about"
+      - title: "Projects"
+        url: "#projects"
+      - title: "Contact"
+        url: "#contact"
