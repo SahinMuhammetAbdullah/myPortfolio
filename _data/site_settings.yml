@@ -55,23 +55,23 @@ multilingual_content:
   tr:
     profile:
       greeting_intro: "Merhaba, ben"
-      tagline: "Full Stack Geliştirici & Yapay Zeka Geliştiricisi"
+      tagline: "Full Stack Geliştirici & Yapay Zeka Araştırmacısı"
       about_title: "Ben Kimim?"
-      about_bio_1: "Geliştirdiğim projelerde hem web teknolojileri hem de yapay zeka algoritmalarını bir araya getirerek uçtan uca çözümler sunan bir Full Stack Geliştiriciyim. Güvenlik, optimizasyon ve kullanıcı deneyimi benim için önceliklidir."
-      about_bio_2: "SOC analizlerinden URL malware tespit sistemlerine, ERP yazılımlarından tarayıcı eklentilerine kadar çeşitli alanlarda üretken projeler geliştirdim. Temiz kod, sürdürülebilirlik ve özgür yazılım felsefesine bağlı kalırım."
+      about_bio_1: "Yapay zeka, siber güvenlik ve web teknolojilerini birleştirerek yenilikçi çözümler üreten bir geliştiriciyim. Sistemlerin sadece çalışmasını değil, aynı zamanda verimli, güvenli ve sürdürülebilir olmasını hedeflerim."
+      about_bio_2: "SOC analizlerinden URL malware tespit sistemlerine, davranış analitiğinden ERP yazılımlarına kadar birçok alanda üretken projeler geliştirdim. Kod kalitesi, açık kaynak felsefesi ve sürekli öğrenme benim için vazgeçilmezdir."
       skills:
         frontend:
           title: "Ön Yüz (Frontend)"
           items: "HTML5, CSS3, JavaScript (ES6+), React, Next.js, Tailwind CSS, Jekyll, Liquid"
         backend:
           title: "Arka Yüz (Backend)"
-          items: "Node.js, Go, Rust, Python, Java, Ruby, C"
+          items: "Node.js, Python, Go, Java, Rust, Ruby"
         database:
-          title: "Veritabanı & Diğer"
-          items: "MySQL, MsSQL, PostgreSQL, Docker, Git, Figma, Wireshark, Linux"
-      contact_intro: "Bir proje hakkında konuşmak, bir soru sormak veya sadece merhaba demek isterseniz, bana ulaşmaktan çekinmeyin. Açık kaynak dünyası, yapay zeka, siber güvenlik ve yazılım geliştirme konularında yeni fikirleri tartışmaya her zaman hazırım."
-      footer_tagline: "Full Stack Geliştirici & Yapay Zeka Uzmanı"
-      footer_copyright: "© {{ current_year }} {{ site_profile_name }}. Bazı hakları saklıdır."
+          title: "Veritabanı & Araçlar"
+          items: "MySQL, PostgreSQL, MsSQL, Docker, Git, Linux, Wireshark, Figma"
+      contact_intro: "Projeler, açık kaynak geliştirme, yapay zeka ya da güvenlik konularında sohbet etmek istersen bana her zaman ulaşabilirsin. Bilgiyi paylaşmak ve üretmek, gelişimin en güçlü adımıdır."
+      footer_tagline: "Full Stack Geliştirici & Yapay Zeka Araştırmacısı"
+      footer_copyright: "© {{ current_year }} Muhammet Abdullah Şahin. Tüm hakları saklıdır."
     navigation_links:
       - title: "Hakkımda"
         url: "#about"
@@ -83,23 +83,23 @@ multilingual_content:
   en:
     profile:
       greeting_intro: "Hi, I'm"
-      tagline: "Full Stack Developer & AI Engineer"
-      about_title: "Who I Am?"
-      about_bio_1: "I am a Full Stack Developer combining modern web technologies with artificial intelligence to deliver end-to-end solutions. My work is focused on performance, security, and usability."
-      about_bio_2: "From SOC analysis to malware detection systems, ERP software to browser extensions — I build impactful and scalable solutions with a strong commitment to clean code and open-source principles."
+      tagline: "Full Stack Developer & AI Researcher"
+      about_title: "Who Am I?"
+      about_bio_1: "I’m a developer who combines artificial intelligence, cybersecurity, and modern web technologies to build intelligent and secure systems. My focus is on creating efficient, scalable, and sustainable solutions."
+      about_bio_2: "I have developed diverse projects ranging from SOC analysis and malicious URL detection systems to behavioral analytics and ERP platforms. I value clean code, open-source collaboration, and continuous learning."
       skills:
         frontend:
           title: "Frontend"
           items: "HTML5, CSS3, JavaScript (ES6+), React, Next.js, Tailwind CSS, Jekyll, Liquid"
         backend:
           title: "Backend"
-          items: "Node.js, Go, Rust, Python, Java, Ruby, C"
+          items: "Node.js, Python, Go, Java, Rust, Ruby"
         database:
-          title: "Database & Others"
-          items: "MySQL, MsSQL, PostgreSQL, Docker, Git, Figma, Wireshark, Linux"
-      contact_intro: "Feel free to reach out if you want to talk about a project, ask a question, or just say hi. I'm always open to discussing ideas in open-source, artificial intelligence, cybersecurity, and software architecture."
-      footer_tagline: "Full Stack Developer & AI Engineer"
-      footer_copyright: "© {{ current_year }} {{ site_profile_name }}. Some rights reserved."
+          title: "Database & Tools"
+          items: "MySQL, PostgreSQL, MsSQL, Docker, Git, Linux, Wireshark, Figma"
+      contact_intro: "Feel free to reach out if you’d like to discuss projects, open-source development, AI research, or cybersecurity. Sharing and creating knowledge is the foundation of growth."
+      footer_tagline: "Full Stack Developer & AI Researcher"
+      footer_copyright: "© {{ current_year }} Muhammet Abdullah Şahin. All rights reserved."
     navigation_links:
       - title: "About"
         url: "#about"
@@ -107,3 +107,4 @@ multilingual_content:
         url: "#projects"
       - title: "Contact"
         url: "#contact"
+
