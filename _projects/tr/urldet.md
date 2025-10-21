@@ -1,45 +1,21 @@
 ---
-# BENZERSİZ PROJE KİMLİĞİ: 
-# Bu ID, projenin farklı dillerdeki versiyonlarını birbirine bağlar.
-# Her iki dildeki .md dosyasında da AYNI olmalıdır.
-# Küçük harf, rakam ve tire (-) kullanın. Boşluk veya özel karakter kullanmaktan kaçının.
 id: urldet 
 
-# SIRALAMA:
-# Projelerin ana sayfada hangi sırada görüneceğini belirler (isteğe bağlı).
-# Küçük sayılar daha önce gelir.
 order: 1
 
-# BAŞLIK (Dil Spesifik):
-# Projenin bu dildeki başlığı. Modal penceresinde ve proje kartında görünür.
 title: "URLDet | Zararlı URL Analizi"
 
-# KISA AÇIKLAMA (Dil Spesifik):
-# Proje kartında görünecek kısa, bir veya iki cümlelik özet.
 short_description: "Makine Öğrenimi ve Pekiştirmeli Öğrenme kullanılarak bir tarayıcı eklentisi ve web adresi üzerinden sorgulama ekranı uygulaması."
 
-# ETİKETLER (Dil Spesifik olabilir veya ortak tutulabilir):
-# Projede kullanılan ana teknolojiler veya anahtar kelimeler. 
-# Proje kartında ve modalda gösterilebilir.
 tags: ["Python", "Makine Öğrenimi", "Pekiştirmeli Öğrenme", "JavaScript", "React JS"]
 
-# PROJE KARTI GÖRSEL AYARLARI (Kapak resmi yoksa kullanılır):
-image_gradient_from: "ctp-blue"   # Renk geçişinin başlangıç rengi (Tailwind renk sınıfı)
-image_gradient_to: "ctp-sapphire" # Renk geçişinin bitiş rengi
+image_gradient_from: "ctp-blue"
+image_gradient_to: "ctp-sapphire"
 
-# PROJE KARTI İKONU:
-# Kapak resmi yoksa veya kapak resminin üzerinde küçük bir ikon olarak gösterilir.
-# Font Awesome sınıfını kullanın.
 icon_class: "fa-solid fa-blog"
 
-# KAPAK GÖRSELİ (İsteğe Bağlı):
-# Proje kartında gösterilecek ana görsel. Eğer bu alan varsa, image_gradient_* alanları kullanılmaz.
-# Yol, projenizin kök dizinine göre olmalı ve başında / olmalı.
-cover_image: "/assets/images/projects/urldet-img.png" # 1920*960 pixel
-
-# LİNKLER:
-# github_url: "https://github.com/SahinMuhammetAbdullah/portfolio-site" # Projenin GitHub deposu (varsa)
-live_url: "https://urldet.masahin.dev" # Projenin canlı demo adresi (varsa)
+cover_image: "/assets/images/projects/urldet-img.png"
+live_url: "https://urldet.masahin.dev"
 
 layout: default
 description: "Makine Öğrenimi ve Pekiştirmeli Öğrenme kullanılarak bir tarayıcı eklentisi ve web adresi üzerinden sorgulama ekranı uygulaması."

@@ -8,7 +8,7 @@ id: e-commerce-platform
 # ORDER:
 # Determines the order in which projects appear on the main page (optional).
 # Lower numbers come first.
-order: 1
+order: 0
 
 # TITLE (Language Specific):
 # The title of the project in this language. Appears in the modal window and project card.
