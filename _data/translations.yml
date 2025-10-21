@@ -26,7 +26,7 @@ tr:
   project_modal_close_button_text: "Kapat" 
   project_modal_close_button_aria_label: "Proje detayları penceresini kapat"
   project_modal_github_link_text: "GitHub"
-  project_modal_live_demo_link_text: "Canlı Demo"
+  project_modal_live_demo_link_text: "Demo"
   project_modal_tags_title: "Kullanılan Teknolojiler:" 
 
   read_more: "Devamını Oku"
@@ -44,6 +44,8 @@ tr:
   footer_design_by: "Tasarım"   
   footer_licensed_under: "Lisanslıdır"
   footer_view_source: "Kaynağı Görüntüle"
+  project_modal_youtube_link_text: "YouTube"
+
 
 
 
@@ -74,7 +76,7 @@ en:
   project_modal_close_button_text: "Close"
   project_modal_close_button_aria_label: "Close project details window" 
   project_modal_github_link_text: "GitHub"
-  project_modal_live_demo_link_text: "Live Demo"
+  project_modal_live_demo_link_text: "Demo"
   project_modal_tags_title: "Technologies Used:"
 
   read_more: "Read More"
@@ -92,3 +94,4 @@ en:
   footer_design_by: "Design by"
   footer_licensed_under: "Licensed under"
   footer_view_source: "View Source"
+  project_modal_youtube_link_text: "YouTube"

@@ -87,6 +87,8 @@ layout: default
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {% assign base_project_path = '_projects/' | append: current_page_lang | append: '/' %}
             {% assign projects_lang = site.projects | where_exp: "item", "item.path contains base_project_path" | sort: "order" %}
+            {% assign projects_lang = projects_lang | where_exp: "project_item", "project_item.order != 0" | sort: "order" %}
+
             {% for project_item in projects_lang %}
                 {% include project_card.html project=project_item lang=current_page_lang colors=colors %}
             {% else %}
@@ -138,10 +140,13 @@ layout: default
                     <div id="modalTags" class="flex flex-wrap gap-2"></div>
                     <div class="flex space-x-3">
                         <a id="modalGithub" href="#" target="_blank" rel="noopener noreferrer" class="social-btn {{ colors.button_github }} px-5 py-2.5 rounded-lg font-semibold transition-colors flex items-center gap-2">
-                            {{ s_global[current_page_lang].project_modal_github_link_text | default: "GitHub" }}
+                            <i class="fab fa-github"></i> {{ s_global[current_page_lang].project_modal_github_link_text | default: "GitHub" }} 
                         </a>
                         <a id="modalLive" href="#" target="_blank" rel="noopener noreferrer" class="social-btn {{ colors.button_live }} px-5 py-2.5 rounded-lg font-semibold transition-colors flex items-center gap-2">
-                            {{ s_global[current_page_lang].project_modal_live_demo_link_text | default: "Live Demo" }}
+                            <i class="fas fa-external-link-alt"></i> {{ s_global[current_page_lang].project_modal_live_demo_link_text | default: "Live Demo" }} 
+                        </a>
+                        <a id="modalYoutube" href="#" target="_blank" rel="noopener noreferrer" class="social-btn bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-lg font-semibold transition-colors flex items-center gap-2">
+                            <i class="fab fa-youtube"></i> {{ s_global[current_page_lang].project_modal_youtube_link_text | default: "YouTube" }} 
                         </a>
                     </div>
                 </div>

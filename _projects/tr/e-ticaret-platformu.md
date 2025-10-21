@@ -8,7 +8,7 @@ id: e-commerce-platform
 # SIRALAMA:
 # Projelerin ana sayfada hangi sırada görüneceğini belirler (isteğe bağlı).
 # Küçük sayılar daha önce gelir.
-order: 1
+order: 0
 
 # BAŞLIK (Dil Spesifik):
 # Projenin bu dildeki başlığı. Modal penceresinde ve proje kartında görünür.

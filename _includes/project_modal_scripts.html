@@ -12,7 +12,8 @@
                 "content": {{ p.content | strip_newlines | jsonify }},
                 "tags": {{ p.tags | jsonify | default: "[]" }},
                 "github": {{ p.github_url | jsonify }},
-                "live": {{ p.live_url | jsonify }}
+                "live": {{ p.live_url | jsonify }},
+                "youtube": {{ p.youtube_url | jsonify }}
             }{% unless forloop.last %},{% endunless %}
             {%- endfor -%}
         ]
@@ -29,6 +30,7 @@
     const modalTagsEl = document.getElementById('modalTags');
     const modalGithubEl = document.getElementById('modalGithub');
     const modalLiveEl = document.getElementById('modalLive');
+    const modalYoutubeEl = document.getElementById('modalYoutube');
     const projectModal = document.getElementById('projectModal');
     const modalTitleEl = document.getElementById('modalTitle');
 
@@ -49,8 +51,12 @@
             }
             modalGithubEl.href = project.github || '#';
             modalLiveEl.href = project.live || '#';
+            modalYoutubeEl.href = project.youtube || '#';
+
             modalGithubEl.style.display = project.github ? 'inline-flex' : 'none';
             modalLiveEl.style.display = project.live ? 'inline-flex' : 'none';
+            modalYoutubeEl.style.display = project.youtube ? 'inline-flex' : 'none';
+
             projectModal.classList.remove('opacity-0', 'pointer-events-none');
             document.body.style.overflow = 'hidden';
         }
@@ -70,4 +76,15 @@
             closeProjectModal();
         }
     });
+
+    if (projectModal) {
+        projectModal.addEventListener('click', (event) => {
+            // Eğer tıklanan öğe modal'ın tam kendisiyse (overlay alanı)
+            // VEYA tıklanan öğe modal içeriğinin (projectModalContentContainer) bir alt öğesi DEĞİLSE
+            // bu, modalın dışına tıklandığı anlamına gelir.
+            if (event.target === projectModal || !projectModalContentContainer.contains(event.target)) {
+                closeProjectModal();
+            }
+        });
+    }
 </script>
